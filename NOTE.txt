@@ -1,0 +1,24 @@
+01. 확장 프로그램
+- Korean Language Pack for VS Code : 한글화
+- Beautify : 코드 자동 정리
+- Auto Rename Tag : 태그 이름을 한 번에 변경
+- Live Server : 브라우저 출력
+
+02. 단축키
+- Ctrl + Alt + L : Beautify 기능
+- Ctrl + Alt + S : 폴더 전체 저장
+- Shift + Tab : 왼쪽으로 내어쓰기
+- Alt + Shift + ↓ : 한 줄 아래에 똑같은 행 복사
+- F12 : 브라우저 개발자 도구
+
+03. 팁
+- [Code -> 기본 설정 -> 바로 가기 키] : 명령창 열기
+- link라고 입력하고 <Tab>키를 누르면 태그 자동 완성
+
+04. CSS 권장되는 공백 : 2칸
+- [공백을 사용한 들여쓰기]
+
+05. 태그
+- <title> 태그 : HTML 문서 제목
+- <link> 태그 : CSS 파일 연결
+- <script> 태그 : JS 파일 연결
