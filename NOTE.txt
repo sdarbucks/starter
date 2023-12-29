@@ -22,3 +22,16 @@
 - <title> 태그 : HTML 문서 제목
 - <link> 태그 : CSS 파일 연결
 - <script> 태그 : JS 파일 연결
+
+06. 화면에 이미지 출력하기
+- <F12>키 : 개발자 도구
+- [Elements] 탭 -> 맨 왼쪽 선택(Select) 아이콘 클릭
+
+07. 주의사항
+- index.html 파일은 절대 폴더 안으로 이동 X
+- 항상 전체 프로젝트의 최상위(Root) 경로에 위치
+
+08. GIT 푸시
+- $ git add .
+- $ git commit -m "사이트 설명 추가"
+- $ git push origin master
