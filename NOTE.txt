@@ -26,6 +26,8 @@
 - <title> 태그 : HTML 문서 제목
 - <link> 태그 : CSS 파일 연결
 - <script> 태그 : JS 파일 연결
+- <input type="text" /> 태그 : 검색창
+- <input type="checkbox" /> 태그 : 체크 버튼
 
 06. 화면에 이미지 출력하기
 - <F12>키 : 개발자 도구
@@ -42,3 +44,17 @@
 
 09. Codepen.io
 - 새로운 코드를 간편하게 작성하고 테스트하는 사이트
+
+10. 태그의 속성과 값
+- <태그 속성="값"></태그>
+- <img src="./cat.jpg" alt="고양이" />
+- src : source 약자
+- alt : alternative 약자
+
+11. 글자와 상자
+- 글자(인라인 요소) 예) <span> 태그
+- 상자(블록 요소) 예) <div> 태그
+
+12. 여백
+- 외부 여백 : margin 속성
+- 내부 여백 : padding 속성
