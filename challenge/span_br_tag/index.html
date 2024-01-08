@@ -8,6 +8,19 @@
   <style>
     span {
       color: red;
+      background-color: black;
+    }
+
+    .blue {
+      color: blue;
+    }
+
+    .red {
+      color: red;
+    }
+
+    #abc {
+      color: green;
     }
   </style>
 </head>
@@ -17,8 +30,11 @@
   <p>- span은 특별한 의미 없이 단순히 텍스트 구분을 위해 사용되는 인라인 요소</p>
   <p>- 다음과 같이 동해물이라는 글자를 span 태그로 구분한 후 여기에 CSS 스타일 적용 가능</p>
   <p>- br은 break의 약어로 '줄바꿈'이라는 의미</p>
-  <p><span>동해물</span>과 백두산이<br />마르고 닳도록</p>
-</body>
+  <!-- 애국가 -->
+  <p style="font-size: 50px;">
+    <span class="blue">동해물</span>과 <span class="red">백두산</span>이 마르고 닳도록<br />
+    하느님이 보우하사 <span id="abc">우리나라</span> 만세
+  </p>
 </body>
 
 </html>

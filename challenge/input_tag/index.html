@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Input Tag Challenge</title>
+  <script src="../js/main.js"></script>
 </head>
 
 <body>
@@ -14,22 +15,42 @@
   <p>- checked 속성을 사용하면, 체크박스에 체크가 되어있는 상태로 화면에 출력</p>
   <p>- 체크박스 : 중복 선택 가능</p>
   <p>- 라디오 버튼 : 그룹당 하나만 선택 가능</p>
-  <input type="text" />
-  <input type="text" value="홍길동" />
-  <input type="text" placeholder="이름을 입력하세요!" />
-  <input type="text" disabled />
-  <label>
-    <input type="checkbox" /> Apple
-  </label>
-  <label>
-    <input type="checkbox" checked /> Banana
-  </label>
-  <label>
-    <input type="radio" name="fruits" checked /> Apple
-  </label>
-  <label>
-    <input type="radio" name="fruits" /> Banana
-  </label>
+  <p>- 입력 힌트(placeholder)는 텍스트박스에 이름이 입력되면 사라짐</p>
+
+  <div>
+    <input type="text" />
+    <input type="text" value="홍길동" />
+    <input type="text" placeholder="이름을 입력하세요!" />
+    <input type="text" disabled />
+    <label>
+      <input type="checkbox" /> Apple
+    </label>
+    <label>
+      <input type="checkbox" checked /> Banana
+    </label>
+    <label>
+      <input type="radio" name="fruits" checked /> Apple
+    </label>
+    <label>
+      <input type="radio" name="fruits" /> Banana
+    </label>
+  </div>
+
+  <div>
+    <input type="text" value="sdarbucks" placeholder="이름을 입력하세요!" disabled>
+    <label>
+      <input type="checkbox" checked> Apple
+    </label>
+    <label>
+      <input type="checkbox" checked> Banana
+    </label>
+    <label>
+      <input type="radio" name="fruits" data-fruit-name="apple"> Apple
+    </label>    
+    <label>
+      <input type="radio" name="fruits" data-fruit-name="banana"> Banana
+    </label>
+  </div>
 </body>
 </body>
 
