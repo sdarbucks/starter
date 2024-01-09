@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector Challenge</title>
+  <style>
+    /* 일치 선택자
+    span.orange {
+      color: red;
+    } */
+
+    /* 자식 선택자
+    ul>.orange {
+      color: red;
+    } */
+
+    /* 하위 선택자
+    div .orange {
+      color: red;
+    } */
+
+    /* 인접 형제 선택자
+    .orange+li {
+      color: red;
+    } */
+
+    /* 일반 형제 선택자
+    .orange~li {
+      color: red;
+    } */
+  </style>
+</head>
+
+<body>
+  <h1>1. Selector</h1>
+  <p>- 일치 선택자 span.orange</p>
+  <p>- 자식 선택자 ul>.orange</p>
+  <p>- 하위 선택자 div .orange</p>
+  <p>- 인접 형제 선택자 .orange+li</p>
+  <p>- 일반 형제 선택자 .orange~li</p>
+  <div>
+    <ul>
+      <li>사과</li>
+      <li>딸기</li>
+      <li class="orange">오렌지</li>
+      <li>망고</li>
+      <li>사과</li>
+    </ul>
+    <div>당근</div>
+    <p>토마토</p>
+    <span class="orange">오렌지</span>
+  </div>
+  <span class="orange">오렌지</span>
+</body>
+
+</html>
