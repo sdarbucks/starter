@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Class Challenge</title>
+  <style>
+    a.hover:hover {
+      color: red;
+    }
+
+    a.active:active {
+      color: red;
+    }
+
+    input:focus {
+      background-color: orange;
+    }
+
+    .fruits span:first-child {
+      color: red;
+    }
+
+    .fruits h3:last-child {
+      color: red;
+    }
+
+    .vegetable *:not(span) {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>2. 가상 클래스 선택자</h1>
+  <p>:hover<br>- 마우스 커서가 올라간 상태에서만 요소를 선택</p>
+  <a href="https://naver.com" class="hover">NAVER</a>
+  <p>--------------------------------------------------</p>
+  <p>:active<br>- 마우스로 클릭하고 있는 동안에만 요소를 선택</p>
+  <a href="https://naver.com" class="active">NAVER</a>
+  <p>--------------------------------------------------</p>
+  <p>:focus<br>- 대화형 요소가 활성화(Focus)되면 요소를 선택 (예시) input, a, button, label, select</p>
+  <input type="text">
+  <p>--------------------------------------------------</p>
+  <p>:first-child와 :last-child<br>- 각각 첫 번째 자식 요소와 마지막 자식 요소를 선택</p>
+  <div class="fruits">
+    <span>딸기</span>
+    <span>수박</span>
+    <div>딸기</div>
+    <p>망고</p>
+    <h3>사과</h3>
+  </div>
+  <p>--------------------------------------------------</p>
+  <p>:not(s)<br>- 소괄호 사이에 부정(제외)할 선택자를 표시
+    <div class="vegetable">
+      <span>당근</span>
+      <span>양파</span>
+      <div>배추</div>
+      <p>상추</p>
+      <h3>오이</h3>
+    </div>
+</body>
+
+</html>
