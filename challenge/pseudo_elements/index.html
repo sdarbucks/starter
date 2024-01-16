@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Elements Challenge</title>
+  <style>
+    .box1::before {
+      content: "앞!";
+    }
+
+    .box2::after {
+      content: "뒤!";
+    }
+  </style>
+</head>
+
+<body>
+  <h1>3. 가상 요소 선택자</h1>
+  <p>::before<br>- 요소의 내부 앞에 가상의 요소를 삽입</p>
+  <div class="box1">
+    Content!
+  </div>
+  <p>--------------------------------------------------</p>
+  <p>::after<br>- 요소의 내부 뒤에 가상의 요소를 삽입</p>
+  <div class="box2">
+    Content!
+  </div>
+</body>
+
+</html>

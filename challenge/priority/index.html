@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priority Challenge</title>
+  <style>
+    /* !important - 999999999점 */
+    div {
+      color: red !important;
+    }
+
+    /* ID 선택자 - 100점 */
+    #color_yellow {
+      color: yellow;
+    }
+
+    /* Class 선택자 - 10점 */
+    .color_green {
+      color: green;
+    }
+
+    /* 태그 선택자 - 1점 */
+    div {
+      color: blue;
+    }
+
+    /* 전체 선택자 - 0점 */
+    * {
+      color: darkblue;
+    }
+
+    /* 상속 - X */
+    body {
+      color: violet;
+    }
+
+    /* Class 선택자 - 10점, 태그 선택자 - 1점, Class 선택자 - 10점 <총 21점> */
+    .list li.item {
+      color: red;
+    }
+
+    /* Class 선택자 - 10점, 태그 선택자 - 1점, 가상 클래스 선택자 - 10점 <총 21점> */
+    .list li:hover {
+      color: red;
+    }
+
+    /* Class 선택자 - 10점, 가상 요소 선택자 - 1점 <총 11점> */
+    .box::before {
+      content: "Good"; color: red;
+    }
+
+    /* ID 선택자 - 100점, 태그 선택자 - 1점 <총 101점> */
+    #submit span {
+      color: red;
+    }
+
+    /* 태그 선택자 - 1점, Class 선택자 - 10점, 태그 선택자 - 1점, 가상 클래스 선택자 - 10점 <총 22점> */
+    header .menu li:nth-child(2) {
+      color: red;
+    }
+
+    /* 태그 선택자 - 1점 <총 1점> */
+    h2 {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>6. 우선순위</h1>
+  <div id="color_yellow" class="color_green" style="color: orange;">
+    Hello world!
+  </div>
+</body>
+
+</html>
